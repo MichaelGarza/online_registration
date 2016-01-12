@@ -1,0 +1,195 @@
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+
+body {
+   font-family: 'Delius', sans-serif;
+   color: #001e3d;
+   padding-bottom: 210px;
+}
+
+.header {
+   text-align: center;
+}
+
+h3:first-child {
+   background: #001e3d;
+   color: #fff;
+   height: 70px;
+   padding-top: 22px;
+}
+
+h3:nth-child(2) {
+   padding-top: 26px;
+   padding-bottom: 8px;
+}
+
+text,
+label,
+p {
+   color: #4c6177;
+}
+
+#container {
+      max-width: 620px;
+      margin: 0 auto;
+   }
+
+input,
+select {
+   height: 50px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+#other-topics {
+   border-style: none;
+   width: 100%;
+   border-radius: 4px;
+   background:#e5e8eb;
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
+
+input[placeholder] {
+   text-align: right;
+   font-size: .8em;
+}
+
+.newsletter span {
+   
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+   display: none;
+}
+input[type="checkbox"] + label span {
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   margin: -1px 4px 0 0;
+   vertical-align: middle;
+   background: #e5e8eb left top no-repeat;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+   
+   background: #e5e8eb -19px top no-repeat;
+   border: 2px solid #001e3d;
+}
+
+input[type="radio"] + label span {
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   margin: -1px 4px 0 0;
+   vertical-align: middle;
+   background: #e5e8eb left top no-repeat;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+   background: #e5e8eb -19px top no-repeat;
+   border: 2px solid #001e3d;
+}   
+
+#zip-code {
+   width: 50%;
+}
+
+label[for="other-topics"] {
+   display: inline-block;
+   margin-top: 10px
+}
+
+#other-topics {
+   height: 100px;
+   display: inline-block;
+   margin-top: 15px;
+}
+
+.sign-up {
+   width: 100%;
+   border-style: none;
+   border-radius: 4px;
+   height: 60px;
+   font-size: 1.5em;
+   background: tomato;
+   color: #fff;
+   font-weight: bolder;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+fieldset {
+   border-style: none;
+}
+
+fieldset p {
+   padding-top: 8px;   
+}
+
+legend {
+   font-weight: bold;
+   font-size: 1.3em;
+   padding-bottom: 5px;
+}
+
+.contact-info legend {
+   margin-bottom: 6px;
+}
+
+hr {
+   margin-left: .8em;
+   margin-right: .8em;
+   background: #001e3d;
+}
+
+.thick-hr {
+   height: 4px;
+   border: none;   
+   margin-top: 35px;
+   margin-bottom: .2em;
+}
+
+.thin-hr {
+   height: 2px;
+   border: none;
+   margin-top: .2em;
+   margin-bottom: 25px
+}
+
+.copyright {
+   text-align: center;
+   font-style: italic;
+}
+
+
+/***-----------------------
+ Media Queries 
+----------------------***/
+
+
+@media (min-width: 1200px) {
+   
+   
+   
+}
+
+
+
+
+
+
+
