@@ -9,37 +9,37 @@
    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-   <form class="online-registration">
+   <form class="online-registration">  
       <div class="header">
          <h3>THE CODE REVIEW</h3>
          <h3>Sign up for our newsletter</h3>
          <p>Get the latest news on how your code is doing right in your inbox</p> 
       </div>
-         
+      
       <div id="container">
          <hr class="thick-hr">
-         <hr class="thin-hr">
-         
+         <hr class="thin-hr">       
          <fieldset class="contact-info">
             <legend>Contact Information</legend>
             
-            <label for="name">Full Name</label><br> 
-            <input type="text" maxlength="30" id="name" placeholder="Required"><br> 
-
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" placeholder="Required"><br>
-
-            <label for="phone">Phone Number</label><br>
-            <input type="tel" pattern="\d{3}(-)?\d{3}(-)?\d{4}?" maxlength="12" id="phone"><br>
-
-            <label for="address">Street Address</label><br>
-            <input type="text" id="address"><br>
-
-            <label for="city">City</label><br>
-            <input type="text" maxlength="20" id="city"><br>
-
-            <label for="state">State</label><br>
-            <select maxlength="20" id="state" placeholder="Select State">
+            <label for="name">Full Name</label> 
+            <input type="text" id="name" maxlength="30" required placeholder="Required">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" maxlength="30" required placeholder="Required">
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" pattern="\d{3}(-)?\d{3}(-)?\d{4}?" maxlength="12" id="phone">
+            
+            <label for="address">Street Address</label>
+            <input type="text" id="address">
+            
+            <label for="city">City</label>
+            <input type="text" maxlength="20" id="city">
+            
+            <label for="state">State</label>
+            <select id="state" class="choose-state">
+               <option value="" style="display:none">Choose State</option>
                <option value="AL">Alabama</option>
                <option value="AK">Alaska</option>
                <option value="AZ">Arizona</option>
@@ -92,64 +92,39 @@
                <option value="WI">Wisconsin</option>
                <option value="WY">Wyoming</option>
             </select><br>
-
+            
             <label for="zip-code">Zip Code</label><br>
             <input type="text" pattern="\d{5}-?(\d{4})?" maxlength="10" size="8" id="zip-code"><br>
-         </fieldset>
-         
-            <hr class="thin-hr">
-         
+            
+         </fieldset>       
+         <hr class="thin-hr">        
   		 <fieldset class="newsletter">
             <legend>Newsletter</legend>
             <p>Select the newsletter you would like to receive</p><br>
-            <input type="checkbox" id="html-news" name="select-newsletter">  
-            <label for="html-news"><span></span>&nbsp; HTML News</label><br>
-            <input type="checkbox" id="css-news" name="select-newsletter">
-            <label for="css-news"><span></span>&nbsp; CSS News</label><br>
-            <input type="checkbox" id="javascript-news" name="select-newsletter">
-            <label for="javascript-news"><span></span>&nbsp; Javascript News</label><br>
-
+            <input type="checkbox" id="html-news" name="select-newsletter" value="">  
+            <label for="html-news">&nbsp; HTML News</label><br>
+            
+            <input type="checkbox" id="css-news" name="select-newsletter" value="">
+            <label for="css-news">&nbsp; CSS News</label><br>
+            
+            <input type="checkbox" id="javascript-news" name="select-newsletter" value="">
+            <label for="javascript-news">&nbsp; Javascript News</label><br>
+            
             <p>Newsletter format</p><br>
-            <input type="radio" id="html" name="format">           
-            <label for="html"><span></span>&nbsp; HTML</label><br>
+            <input type="radio" id="html-text" name="format">           
+            <label for="html-text">&nbsp; HTML</label><br> 
             
             <input type="radio" id="plain-text" name="format">       
-            <label for="plain-text"><span></span>&nbsp; Plain text</label><br>
-
-            <label for="other-topics">Other topics you'd like to hear about</label>		
-            <textarea id="other-topics" rows="4"></textarea><br>
-
-            <input class="sign-up" type="submit" value="Sign up"><br>
-         </fieldset>  
+            <label for="plain-text">&nbsp; Plain text</label>
             
+            <label for="other-topics">Other topics you'd like to hear about</label>		
+            <textarea id="other-topics" rows="4"></textarea>
+            <input class="sign-up" type="submit" value="Sign Up">
+         </fieldset>
+         
          <p class="copyright">Copyright 2015, The Code Review</p>           
       </div>  
    </form>
 </body>
 </html>  
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
    

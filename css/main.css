@@ -4,11 +4,16 @@
    margin: 0;
 }
 
+*:focus,
+option {
+   outline: 0;
+}
 
 body {
    font-family: 'Delius', sans-serif;
-   color: #001e3d;
+   color: #2f4763;
    padding-bottom: 210px;
+   background: #eaecef;
 }
 
 .header {
@@ -16,7 +21,7 @@ body {
 }
 
 h3:first-child {
-   background: #001e3d;
+   background: #2f4763;
    color: #fff;
    height: 70px;
    padding-top: 22px;
@@ -27,133 +32,16 @@ h3:nth-child(2) {
    padding-bottom: 8px;
 }
 
-text,
-label,
-p {
-   color: #4c6177;
-}
-
-#container {
-      max-width: 620px;
-      margin: 0 auto;
-   }
-
-input,
-select {
-   height: 50px;
-   padding-left: 20px;
-   padding-right: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-#other-topics {
-   border-style: none;
-   width: 100%;
-   border-radius: 4px;
-   background:#e5e8eb;
-   margin-top: 10px;
-   margin-bottom: 15px;
-}
-
-input[placeholder] {
-   text-align: right;
-   font-size: .8em;
-}
-
-.newsletter span {
-   
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-   display: none;
-}
-input[type="checkbox"] + label span {
+.contact-info label {
    display: inline-block;
-   width: 18px;
-   height: 18px;
-   margin: -1px 4px 0 0;
-   vertical-align: middle;
-   background: #e5e8eb left top no-repeat;
-   border-radius: 4px;
-   cursor: pointer;
-}
-
-input[type="checkbox"]:checked + label span {
-   
-   background: #e5e8eb -19px top no-repeat;
-   border: 2px solid #001e3d;
-}
-
-input[type="radio"] + label span {
-   display: inline-block;
-   width: 18px;
-   height: 18px;
-   margin: -1px 4px 0 0;
-   vertical-align: middle;
-   background: #e5e8eb left top no-repeat;
-   border-radius: 50%;
-   cursor: pointer;
-}
-
-input[type="radio"]:checked + label span {
-   background: #e5e8eb -19px top no-repeat;
-   border: 2px solid #001e3d;
-}   
-
-#zip-code {
-   width: 50%;
-}
-
-label[for="other-topics"] {
-   display: inline-block;
-   margin-top: 10px
-}
-
-#other-topics {
-   height: 100px;
-   display: inline-block;
-   margin-top: 15px;
-}
-
-.sign-up {
-   width: 100%;
-   border-style: none;
-   border-radius: 4px;
-   height: 60px;
-   font-size: 1.5em;
-   background: tomato;
-   color: #fff;
-   font-weight: bolder;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-
-fieldset {
-   border-style: none;
-}
-
-fieldset p {
-   padding-top: 8px;   
-}
-
-legend {
-   font-weight: bold;
-   font-size: 1.3em;
-   padding-bottom: 5px;
-}
-
-.contact-info legend {
-   margin-bottom: 6px;
+   height:  46px;
+   padding-top: 16px;
 }
 
 hr {
    margin-left: .8em;
    margin-right: .8em;
-   background: #001e3d;
+   background: #2f4763;
 }
 
 .thick-hr {
@@ -166,8 +54,50 @@ hr {
 .thin-hr {
    height: 2px;
    border: none;
-   margin-top: .2em;
-   margin-bottom: 25px
+   margin-bottom: 25px;
+}
+
+label:hover {
+   cursor: pointer;
+   font-weight: bold;
+}
+
+#container {
+   max-width: 620px;
+   margin: 0 auto;
+}
+
+fieldset {
+   border-style: none;
+}
+
+fieldset p {
+   display: inline-block;
+   margin-top: 14px;
+   margin-bottom: 8px;
+}
+
+legend {
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
+#zip-code {
+   display: block;
+   width: 150px;
+}
+
+label[for$="news"],
+label[for$="text"] {
+   display: inline-block;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+label[for="other-topics"] {
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 16px;
 }
 
 .copyright {
@@ -175,21 +105,177 @@ hr {
    font-style: italic;
 }
 
+/***----------------------------
+ Form field & button styles 
+----------------------------***/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+   text-align: center;
+}
+
+input, #other-topics, .choose-state {
+   transition: all 0.30s ease-in-out;
+   width: 100%;
+   border-style: none;
+   outline: none;
+   height: 50px;
+   background:#b0dbc2;
+   padding: 10px;
+   border-radius: 4px;
+   color: #959595;
+}
+
+#other-topics {
+   height: 100px;
+}
+
+input:focus, #other-topics:focus, .choose-state:focus {
+   box-shadow: 0 0 5px #2f4763;
+   border: 2px solid #66788a;
+   color: #2f4763;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+   display: none;
+}
+
+input[type="checkbox"] + label:before {
+   content: "";  
+   display: inline-block;  
+   width: 18px;  
+   height: 18px;  
+   vertical-align: middle;
+   margin-bottom: 2px;
+   margin-right: 6px;
+   background-color: #b0dbc2;  
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before {
+   content: "\2714"; /* Tick */
+   font-weight: normal;
+   color: #435972;
+   border: 2px solid #435972;
+   width: 14px;
+   height: 14px;
+   text-align: center;
+   line-height: 14px;
+}
+
+input[type="radio"] + label:before {
+   content: "";  
+   display: inline-block;  
+   width: 18px;  
+   height: 18px;  
+   vertical-align: middle;
+   margin-bottom: 2px;
+   margin-right: 6px;  
+   background-color: #b0dbc2;  
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before {
+   content: "\26ab"; /* Tick */
+   font-weight: normal;
+   color: #435972;
+   border: 2px solid #435972;
+   width: 14px;
+   height: 14px;
+   text-align: center;
+   line-height: 14px;
+} 
+
+input[type="submit"] {
+   background: #f69a7b;
+   color: #fff;
+   width: 100%;
+   border-style: none;
+   border-radius: 4px;
+   height: 60px;
+   font-size: 1.5em;
+   font-weight: bolder;
+   margin-top: 24px;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover { 
+   background: tomato; 
+}
+
 
 /***-----------------------
  Media Queries 
 ----------------------***/
 
-
 @media (min-width: 1200px) {
    
+   body {
+      padding-bottom: 300px;
+   }
    
+   .header {
+      padding-bottom: 10px;
+   }
+   
+   h3:nth-child(2) {
+      font-size: 1.6em;
+      padding-top: 60px;
+   }
+   
+   .contact-info legend {
+      padding-top: 20px;
+   }
+   
+   .contact-info label {
+      height: 50px;
+      width: 25%;
+      float: left;
+   }
+   
+   .contact-info input:not(#zip-code),
+   .choose-state { 
+      width: 75%  
+   }
+   
+   .contact-info input:not(#zip-code), select, label {
+      margin-top: 20px;
+   }
+   
+   label[for="zip-code"] {
+      width: 25%;
+      float: left;
+      margin-top: 20px;
+   }
+   
+   #zip-code {
+      margin-bottom: 20px;
+   }
+   
+   label[for$="news"],
+   label[for$="text"] {
+      margin: 0;
+      padding: 5px;
+   }
+   
+   .newsletter legend {
+      padding-top: 20px;
+   }
+   
+   fieldset p {
+      margin-bottom: 0;
+      padding-top: 5px;
+      padding-bottom: 8px;
+   }
+   
+   .copyright {
+   padding-top: 15px;
+   }
    
 }
-
-
-
-
-
-
 
