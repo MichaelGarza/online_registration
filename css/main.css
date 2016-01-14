@@ -213,7 +213,7 @@ input[type="submit"]:hover {
  Media Queries 
 ----------------------***/
 
-@media (min-width: 1200px) {
+@media (min-width: 760px) {
    
    body {
       padding-bottom: 300px;
